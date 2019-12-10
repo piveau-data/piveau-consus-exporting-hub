@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://io.piveau/resources/exporting-hub/config.schema.json",
+  "title": "exporting-hub configuration",
+  "description": "piveau pipe segment config object schema",
+  "type": "object",
+  "required": [ "hub" ],
+  "properties": {
+    "hub": {
+      "type": "object",
+      "title": "Hub configuration",
+      "required": [ "serviceName" ],
+      "properties": {
+        "serviceName": {
+          "type": "string",
+          "title": "The service name of the hub"
+        }
+      }
+    }
+  }
+}

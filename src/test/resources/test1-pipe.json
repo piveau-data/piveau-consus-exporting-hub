@@ -1,0 +1,45 @@
+{
+  "header": {
+    "id": "4ff7a0a7-2fc3-4e84-a6ef-a83ab55b698c",
+    "title": "Test Pipe",
+    "context": "JUnit5 Tests",
+    "transport": "payload",
+    "version": "1.0"
+  },
+  "body": {
+    "segments": [
+      {
+        "header": {
+          "name": "exporting-hub",
+          "segmentNumber": 1,
+          "title": "Exporting hub",
+          "processed": false
+        },
+        "body": {
+          "config": {
+            "hub": {
+              "endpoint": {
+                "address": "http://localhost:8098/hub",
+                "apiKey": "not-necessary"
+              }
+            }
+          },
+          "payload": {
+            "header": {
+              "seqNumber": 0,
+              "dataType": "text"
+            },
+            "body": {
+              "dataInfo": {
+                "identifier": "whatever",
+                "catalogue": "any-kind"
+              },
+              "dataMimeType": "text/plain",
+              "data": "Test message"
+            }
+          }
+        }
+      }
+    ]
+  }
+}
